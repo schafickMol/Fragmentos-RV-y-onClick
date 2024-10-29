@@ -3,14 +3,15 @@
 
     <item
         android:id="@+id/fragmento1"
-        android:title="fragmento 1"
-        android:icon="@drawable/ic_fragmento"/>
+        android:title="Pizza"
+        android:icon="@drawable/pizza"/>
     <item
         android:id="@+id/fragmento2"
-        android:title="fragmento 2"
-        android:icon="@drawable/ic_fragmento"/>
+        android:title="Ensaladas"
+        android:icon="@drawable/ensaladas"/>
     <item
         android:id="@+id/fragmento3"
-        android:title="fragmento 3"
-        android:icon="@drawable/ic_fragmento"/>
+        android:title="Favoritos"
+        android:icon="@drawable/favorite"/>
+
 </menu>

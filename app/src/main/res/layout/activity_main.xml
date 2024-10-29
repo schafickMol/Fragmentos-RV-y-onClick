@@ -5,18 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
 
     <FrameLayout
         android:id="@+id/frameContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
-    
+        android:layout_height="731dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"></FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/menu_toolbar">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"></ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_Menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="@color/red"
+        app:itemIconTint="@color/gris"
         app:menu="@menu/menu_navegacion"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

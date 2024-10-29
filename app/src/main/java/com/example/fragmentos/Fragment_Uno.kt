@@ -32,7 +32,12 @@ class Fragment_Uno : Fragment() {
 
 
         recyclerView.adapter= peliculasAdapter(PeliculasProvider.peliculasList){pelicula->
-            val detallesFragment = ResultFragment.newInstance(pelicula.nombre)
+            val detallesFragment = ResultFragment.newInstance(
+                pelicula.nombre,
+                pelicula.image,
+                pelicula.precio,
+                pelicula.descripcion)
+
             parentFragmentManager.beginTransaction()
                 .replace(R.id.frameContainer,detallesFragment)
                 .addToBackStack(null)

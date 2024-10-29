@@ -11,17 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp" >
+        android:padding="40dp"
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/tvPeliculaNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"></TextView>
+            android:layout_marginBottom="4dp"/>
 
-        
+        <TextView
+            android:id="@+id/tvPizzalaPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/ivPizzaImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
