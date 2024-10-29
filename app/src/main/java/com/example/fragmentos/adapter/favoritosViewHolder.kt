@@ -4,7 +4,6 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fragmentos.Ensaladas
 import com.example.fragmentos.R
 import com.example.fragmentos.favoritos
 
